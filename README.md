@@ -44,15 +44,17 @@ The system consists of three independent agents:
 
 
 ## 📂 Project Structure
-app/
-├── agents/
-│ ├── stock_agent.py
-│ ├── sentiment_agent.py
-│ ├── resolver_agent.py
-├── main.py
-tests/
-├── test_api.py
 
+```
+app/
+ ├── agents/
+ │    ├── stock_agent.py
+ │    ├── sentiment_agent.py
+ │    ├── resolver_agent.py
+ ├── main.py
+tests/
+ ├── test_api.py
+```
 ##  How to Run
 
 ```bash
