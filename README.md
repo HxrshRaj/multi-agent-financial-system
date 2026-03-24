@@ -55,19 +55,25 @@ app/
 tests/
  ├── test_api.py
 ```
-##  How to Run
+## ▶️ How to Run
 
 ```bash
 pip install -r requirements.txt
 python -m uvicorn app.main:app --reload
+```
+
 Then open:
 http://127.0.0.1:8000/analyze/AAPL
 
-## Future Improvements
-Integration with real financial APIs
-ML-based sentiment analysis
-CI/CD pipeline with GitHub Actions
-Cloud deployment (AWS/GCP)
+##  Future Improvements
 
-👨‍💻 Author
+- Integration with real financial APIs
+- ML-based sentiment analysis
+- CI/CD pipeline with GitHub Actions
+- Cloud deployment (AWS/GCP)
+
+---
+
+## 👨‍💻 Author
+
 Harsh Raj
