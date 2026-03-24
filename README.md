@@ -1,4 +1,3 @@
-# multi-agent-financial-system
 # Multi-Agent Financial Intelligence System
 
 An AI-inspired multi-agent system that simulates financial data analysis by combining multiple independent agents into a unified decision-making pipeline.
@@ -9,7 +8,12 @@ An AI-inspired multi-agent system that simulates financial data analysis by comb
 - Asynchronous FastAPI backend
 - Parallel execution using asyncio for improved performance
 - Modular and scalable project structure
-- Docker-ready deployment setup
+- Docker-based containerization
+
+##  CI/CD & Deployment
+
+- Dockerfile included for containerization and scalable deployment
+- Designed to integrate with CI/CD pipelines (e.g., GitHub Actions) for automated testing and deployment
 
 ##  Architecture
 
@@ -25,17 +29,19 @@ The system consists of three independent agents:
    - Combines outputs from all agents
    - Produces final BUY / SELL / HOLD decision
 
-## ⚡ Performance Optimization
+##  Performance Optimization
 
 - Implemented `asyncio.gather()` to execute agents concurrently
-- Reduces response latency and improves throughput
+- Improves response efficiency by parallelizing independent tasks
 
 ## 🛠 Tech Stack
 
 - Python
 - FastAPI
 - AsyncIO
-- Docker (containerization ready)
+- Docker
+- CI/CD (GitHub Actions - planned integration)
+
 
 ## 📂 Project Structure
 app/
@@ -44,21 +50,22 @@ app/
 │ ├── sentiment_agent.py
 │ ├── resolver_agent.py
 ├── main.py
+tests/
+├── test_api.py
 
-## ▶ How to Run
+##  How to Run
 
 ```bash
 pip install -r requirements.txt
 python -m uvicorn app.main:app --reload
-
 Then open:
 http://127.0.0.1:8000/analyze/AAPL
 
- Future Improvements
-Real-time financial API integration
+## Future Improvements
+Integration with real financial APIs
 ML-based sentiment analysis
-Database integration
 CI/CD pipeline with GitHub Actions
-👨‍💻 Author
+Cloud deployment (AWS/GCP)
 
+👨‍💻 Author
 Harsh Raj
